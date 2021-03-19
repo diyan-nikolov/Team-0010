@@ -11,12 +11,10 @@ def payxhr():
     return rate
 
 # define a function to compute the amount paid
+def totalPay (hours, rate):
+    pay = ((hours-40)*1.5*rate+40*rate)
+    return pay
 # print all the value to be returned
 
-def computepay(h,r):
-    return 42.37
-
-hrs = input("Enter Hours:")
-p = computepay(10,20)
-print("Pay",p)
+print("Here is the total pay: ", totalPay(getHours(), payxhr()))
 
