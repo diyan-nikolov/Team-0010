@@ -1,4 +1,9 @@
 # define a function to prompt a user for total hours worked
+
+def getHours():
+    hours = float(input("Please enter your hours: "))
+    return hours
+
 # define a function to prompt a user for Rate per hourly work
 # define a function to compute the amount paid
 # print all the value to be returned
