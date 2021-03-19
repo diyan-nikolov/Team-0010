@@ -12,8 +12,10 @@ def payxhr():
 
 # define a function to compute the amount paid
 def totalPay (hours, rate):
-    pay = ((hours-40)*1.5*rate+40*rate)
-    return pay
+    pay = hours * rate
+    if hours > 40:
+        pay = ((((hours - 40) * 1.5) * rate) + 40 * rate)
+    return float(pay)
 # print all the value to be returned
 
 print("Here is the total pay: ", totalPay(getHours(), payxhr()))
